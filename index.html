@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOREM GEN</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="grid logo-container logoHasMoved" ng-class="{logoHasMoved: logoTest == true}">
+        <div class="grid__col--12">
+            <div class="abs-cont  absLeft" ng-class="{absLeft: logoTest == true}" >
+                <div class="abs">
+    
+                </div>    
+            </div>
+    
+        </div>
+    </div>
+    
+    <ul class="profile-menu edit-lipsum fade ng-scope cta" >
+    
+        <a href="http://alexartlett.com/lipsumgen" target="_blank" title="Create Your Own!" class="tooltip">
+            <li class="secondary-color-background nav-item">
+                <i class="ion-compose"></i><span>Create Your Own!</span>
+            </li>
+        </a>
+    
+    </ul>
+    
+    <div class="grid">
+            <div class="grid__col--12">
+                <h1>Dhipsum</h1>
+                <p>Bespoke artisanal filler for the renaissance man/woman #jfr. <br/>Feed the Lipsum() class arrays of your own unique clean and dirty words and phrases to create your own unique Lorem Ipsum set! 
+                  <br/>
+                  <a href="http://alexartlett.com/lipsumgen/" target="_blank">Or click here to do it without touching any code!</a></p>
+    
+            </div>
+    </div>
+    
+    
+    <div class="grid">
+    
+            <div class="grid__col&#45;&#45;4 display-lipsum-paragraphs">
+    
+                <!--Paragraphs-->
+                <div class="lipsum-num-paragraphs">
+                    <input name="lipsumParagraphs" value="3 Paragraphs" id="lipsumParagraphs" type="text" disabled="">
+                </div>
+                <div class="para-controls">
+                    <div class="lipsum-para-inc-dec" id="lipsumParagraphsDec">
+                        <i class="ion-chevron-left" data-pack="default" data-tags="arrow, left"></i>
+                    </div>
+                    <div class="lipsum-para-inc-dec" id="lipsumParagraphsInc" >
+                        <i class="ion-chevron-right" data-pack="default" data-tags="arrow, right"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+    
+    
+    
+            <div class="grid__col&#45;&#45;3 dirty-words" id="dirtyWords">
+                <span>Dirty Words</span>
+                <div class="squaredTwo">
+                    <input type="checkbox" value="None" name="check" id="lipsumDirty">
+                    <label for="lipsumDirty"></label>
+                </div>
+    
+    
+            </div>
+            <div class="grid__col&#45;&#45;5 generate-lipsum-col">
+                <h1 id="generateMarkup" name="generateMarkup">
+                    Generate Markup <i class="ion-chevron-right"></i>
+                </h1>
+            </div>
+        </div><!-- Lipsum Tools -->
+    
+        <div class="grid">
+            <div class="grid__col--12">
+                <div id="lipsumWell" style="display: none"></div>
+            </div>
+        </div><!-- Lipsum Well -->
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
